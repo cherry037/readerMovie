@@ -1,0 +1,12 @@
+<!--pages/movies/stars/stars.wxml-->
+<template name="starsTemplate">
+  <view class='stars-container'>
+    <view class='stars'>
+      <block wx:for='{{starArray}}' wx:for-item='item' wx:key="unique">
+        <image wx:if='{{item === 1}}' src="/images/icon/star.png"></image>
+        <image wx:else src="/images/icon/none-star.png"></image>
+      </block>
+    </view>
+    <text class='star-sore'>{{average}}</text>
+  </view>
+</template>

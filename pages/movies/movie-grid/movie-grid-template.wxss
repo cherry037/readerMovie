@@ -1,0 +1,16 @@
+/* pages/movies/more-movie/more-movie.wxss */
+@import '../movie/movie-template.wxss';
+.movie-more-container{
+  /* overflow: hidden; */
+  padding: 40rpx 0 20rpx 6rpx;
+  height: 1300rpx;
+}
+.movie-item{
+  float: left;
+}
+.more-text{
+  width:100%;
+  text-align:center;
+  display:inline-block;
+  margin-top: 15rpx;
+}

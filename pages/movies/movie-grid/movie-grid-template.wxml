@@ -1,0 +1,11 @@
+<import src="../movie/movie-template.wxml" />
+<template name="movieGridTemplate">
+  <scroll-view scroll-y="true" scroll-x="{{false}}" bindscrolltolower='onScrollLower' class='movie-more-container'>
+    <block wx:for="{{movies}}" wx:for-item="movie" wx:key="unique">
+      <view class='movie-item'>
+        <template is="movieTemplate" data="{{...movie}}"></template>
+      </view>
+    </block>
+    <!-- <text wx:if="{{!moreFlag}}" class='more-text'>没有更多。。。</text> -->
+  </scroll-view>
+</template>
